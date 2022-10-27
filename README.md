@@ -83,9 +83,11 @@ DTU
 | 0.321     | 0.313      | 0.317        |
 
 TANK(mean F-score)
-| intermediate| advanced (mm)|
-|-------------|--------------|
-| 56.88       | 34.39        |
+| intermediate | advanced (mm) |
+|------------- |-------------- |
+| 56.88        | 34.39         |
+
+
 The performance on Tanks & Temples datasets will be better if the model is fine-tuned on BlendedMVS Datasets
 ### BlendedMVS
 * Download the [dataset](https://1drv.ms/u/s!Ag8Dbz2Aqc81gVDgxb8MDGgoV74S?e=hJKlvV).
