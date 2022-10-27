@@ -89,8 +89,8 @@ TANK(mean F-score)
 
 
 The performance on Tanks & Temples datasets will be better if the model is fine-tuned on BlendedMVS Datasets
-### BlendedMVS
-* Download the [dataset](https://1drv.ms/u/s!Ag8Dbz2Aqc81gVDgxb8MDGgoV74S?e=hJKlvV).
+
+* Download the BlendedMVS [dataset](https://1drv.ms/u/s!Ag8Dbz2Aqc81gVDgxb8MDGgoV74S?e=hJKlvV).
 
 * For detailed quantitative results on Tanks & Temples, please check the leaderboards ([Tanks & Temples](https://www.tanksandtemples.org/details/1170/))
 
