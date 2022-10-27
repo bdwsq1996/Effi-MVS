@@ -78,8 +78,6 @@ if args.testpath_single_scene:
 
 # num_stage = len([int(nd) for nd in args.ndepths.split(",") if nd])
 num_stage = 3
-Interval_Scale = args.interval_scale
-print("***********Interval_Scale**********\n", Interval_Scale)
 def prepare_img(hr_img):
     # w1600-h1200-> 800-600 ; crop -> 640, 512; downsample 1/4 -> 160, 128
 
