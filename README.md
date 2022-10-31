@@ -82,7 +82,7 @@ DTU
 |-----------|------------|--------------|
 | 0.321     | 0.313      | 0.317        |
 
-TANK(mean F-score)
+TANK-train on DTU(mean F-score)
 | intermediate | advanced (mm) |
 |------------- |-------------- |
 | 56.88        | 34.39         |
