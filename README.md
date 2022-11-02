@@ -103,5 +103,5 @@ The performance on Tanks & Temples datasets will be better if the model is fine-
 * In ``train.sh``, set `MVS_TRAINING` or `BLEND_TRAINING` as the root directory of dataset; set `--logdir` as the directory to store the checkpoints. 
 * Train the model by running `sh train.sh`.
 
-Thanks to Yao Yao for opening source of his excellent work [MVSNet](https://github.com/YoYo000/MVSNet). Thanks to Xiaoyang Guo for opening source of his PyTorch implementation of MVSNet [MVSNet-pytorch](https://github.com/xy-guo/MVSNet_pytorch). Thanks to Zachary Teed for his excellent work RAFT, which inspired me to this work. 
+Thanks to Yao Yao for opening source of his excellent work [MVSNet](https://github.com/YoYo000/MVSNet). Thanks to Xiaoyang Guo for opening source of his PyTorch implementation of MVSNet [MVSNet-pytorch](https://github.com/xy-guo/MVSNet_pytorch). Thanks to Zachary Teed for his excellent work RAFT, which inspired us to this work. 
 
