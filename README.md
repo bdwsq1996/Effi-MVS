@@ -88,7 +88,7 @@ TANK-train on DTU(mean F-score)
 | 56.88        | 34.39         |
 
 
-TANK-train on blendmvs(mean F-score)
+TANK-train on blendedmvs(mean F-score)
 | intermediate | advanced (mm) |
 |------------- |-------------- |
 | 62.38        | 38.14         |
