@@ -88,6 +88,12 @@ TANK-train on DTU(mean F-score)
 | 56.88        | 34.39         |
 
 
+TANK-train on blendmvs(mean F-score)
+| intermediate | advanced (mm) |
+|------------- |-------------- |
+| 62.38        | 38.14         |
+
+
 The performance on Tanks & Temples datasets will be better if the model is fine-tuned on BlendedMVS Datasets
 
 * Download the BlendedMVS [dataset](https://1drv.ms/u/s!Ag8Dbz2Aqc81gVDgxb8MDGgoV74S?e=hJKlvV).
@@ -97,5 +103,5 @@ The performance on Tanks & Temples datasets will be better if the model is fine-
 * In ``train.sh``, set `MVS_TRAINING` or `BLEND_TRAINING` as the root directory of dataset; set `--logdir` as the directory to store the checkpoints. 
 * Train the model by running `sh train.sh`.
 
-Thanks to Yao Yao for opening source of his excellent work [MVSNet](https://github.com/YoYo000/MVSNet). Thanks to Xiaoyang Guo for opening source of his PyTorch implementation of MVSNet [MVSNet-pytorch](https://github.com/xy-guo/MVSNet_pytorch).
+Thanks to Yao Yao for opening source of his excellent work [MVSNet](https://github.com/YoYo000/MVSNet). Thanks to Xiaoyang Guo for opening source of his PyTorch implementation of MVSNet [MVSNet-pytorch](https://github.com/xy-guo/MVSNet_pytorch). Thanks to Zachary Teed for his excellent work RAFT, which inspired me to this work. 
 
