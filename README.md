@@ -102,6 +102,10 @@ The performance on Tanks & Temples datasets will be better if the model is fine-
 
 * In ``train.sh``, set `MVS_TRAINING` or `BLEND_TRAINING` as the root directory of dataset; set `--logdir` as the directory to store the checkpoints. 
 * Train the model by running `sh train.sh`.
+DTU Training dataset 
+* Download the preprocessed [DTU training data](https://drive.google.com/file/d/1eDjh-_bxKKnEuz5h-HXS7EDJn59clx6V/view)
+ and [Depths_raw](https://virutalbuy-public.oss-cn-hangzhou.aliyuncs.com/share/cascade-stereo/CasMVSNet/dtu_data/dtu_train_hr/Depths_raw.zip) 
+ (both from [Original MVSNet](https://github.com/YoYo000/MVSNet)), and upzip it as the $MVS_TRANING  folder.
 
 Thanks to Yao Yao for opening source of his excellent work [MVSNet](https://github.com/YoYo000/MVSNet). Thanks to Xiaoyang Guo for opening source of his PyTorch implementation of MVSNet [MVSNet-pytorch](https://github.com/xy-guo/MVSNet_pytorch). Thanks to Zachary Teed for his excellent work RAFT, which inspired us to this work. 
 
