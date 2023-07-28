@@ -33,7 +33,7 @@ class DepthNet(nn.Module):
             src_proj_new[:, :3, :4] = torch.matmul(src_proj[:, 1, :3, :3], src_proj[:, 0, :3, :4])
             ref_proj_new = ref_proj[:, 0].clone()
             ref_proj_new[:, :3, :4] = torch.matmul(ref_proj[:, 1, :3, :3], ref_proj[:, 0, :3, :4])
-            warped_volume = homo_warping(src_fea, src_proj_new, ref_proj_new, depth_values)
+            warped_volume = homo_warping2(src_fea, src_proj_new, ref_proj_new, depth_values)
 
             if self.training:
                 volume_sum = volume_sum + warped_volume
@@ -148,7 +148,7 @@ class GetCost(nn.Module):
             src_proj_new[:, :3, :4] = torch.matmul(src_proj[:, 1, :3, :3], src_proj[:, 0, :3, :4])
             ref_proj_new = ref_proj[:, 0].clone()
             ref_proj_new[:, :3, :4] = torch.matmul(ref_proj[:, 1, :3, :3], ref_proj[:, 0, :3, :4])
-            warped_volume = homo_warping(src_fea, src_proj_new, ref_proj_new, depth_range_samples)
+            warped_volume = homo_warping2(src_fea, src_proj_new, ref_proj_new, depth_range_samples)
             if self.training:
                 volume_sum = volume_sum + warped_volume
                 volume_sq_sum = volume_sq_sum + warped_volume ** 2
