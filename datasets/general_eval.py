@@ -67,14 +67,14 @@ class MVSDataset(Dataset):
         intrinsics[:2, :] /= 4.0
         # depth_min & depth_interval: line 11
         depth_min = float(lines[11].split()[0])
-        depth_interval = float(lines[11].split()[1])
-
+        depth_interval = 2.5
+        depth_interval *= interval_scale
         if len(lines[11].split()) >= 3:
             num_depth = lines[11].split()[2]
             depth_max = depth_min + int(float(num_depth)) * depth_interval
             depth_interval = (depth_max - depth_min) / self.ndepths
 
-        depth_interval *= interval_scale
+        
 
         return intrinsics, extrinsics, depth_min, depth_interval
 
