@@ -60,7 +60,7 @@ class MVSDataset(Dataset):
         intrinsics = np.fromstring(' '.join(lines[7:10]), dtype=np.float32, sep=' ').reshape((3, 3))
         # depth_min & depth_interval: line 11
         depth_min = float(lines[11].split()[0])
-        depth_interval = float(lines[11].split()[1]) * self.interval_scale
+        depth_interval = 2.5 * self.interval_scale
         return intrinsics, extrinsics, depth_min, depth_interval
 
     def read_img(self, filename):
