@@ -75,9 +75,12 @@ class MVSDataset(Dataset):
         intrinsics = np.fromstring(' '.join(lines[7:10]), dtype=np.float32, sep=' ')
         intrinsics = intrinsics.reshape((3, 3))
 
-
-        depth_min = float(lines[11].split()[0])
-        depth_max = float(lines[11].split()[3])
+        if len(lines[11].split()) >= 3:
+            depth_min = float(lines[11].split()[0])
+            depth_max = float(lines[11].split()[3])
+        else:
+            depth_min = float(lines[11].split()[0])
+            depth_max = float(lines[11].split()[1])           
 
         return intrinsics, extrinsics, depth_min, depth_max
 
