@@ -69,10 +69,10 @@ class MVSDataset(Dataset):
         depth_min = float(lines[11].split()[0])
         depth_interval = 2.5
         depth_interval *= interval_scale
-        if len(lines[11].split()) >= 3:
-            num_depth = lines[11].split()[2]
-            depth_max = depth_min + int(float(num_depth)) * depth_interval
-            depth_interval = (depth_max - depth_min) / self.ndepths
+        # if len(lines[11].split()) >= 3:
+        #     num_depth = lines[11].split()[2]
+        #     depth_max = depth_min + int(float(num_depth)) * depth_interval
+        #     depth_interval = (depth_max - depth_min) / self.ndepths
 
         
 
