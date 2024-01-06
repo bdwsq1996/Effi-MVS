@@ -16,7 +16,7 @@ python test.py --dataset=general_eval --batch_size=1 --testpath=$DTU_TESTING  --
               --num_view=5
 ##tank  train_on_dtu
 #python test.py --dataset=tank --batch_size=1 --testpath=$TANK_TESTING  --ndepths=96 --CostNum=4 --numdepth=384 --loadckpt $CKPT_FILE --outdir $OUT_DIR --data_type tank \
-#              --num_view=7
+#              --num_view=11
 ##tank  train_on_blend
 #python test.py --dataset=tank --batch_size=1 --testpath=$TANK_TESTING  --ndepths=96 --CostNum=4 --numdepth=768 --loadckpt $CKPT_FILE --outdir $OUT_DIR --data_type tank \
-#              --num_view=7
+#              --num_view=11
